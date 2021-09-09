@@ -1,4 +1,3 @@
-#!/bin/bash
 
 #bin/usimm input/1channel.cfg input/comm2 > output/c2-1 &
 #bin/usimm input/1channel.cfg input/comm1 input/comm1 > output/c1-c1-1 &
@@ -16,7 +15,69 @@
 #bin/usimm input/4channel.cfg input/fluid input/swapt input/comm2 input/comm2 > output/fl-sw-c2-c2-4 &
 #bin/usimm input/4channel.cfg input/face input/face input/ferret input/ferret > output/fa-fa-fe-fe-4 &
 #bin/usimm input/4channel.cfg input/black input/black input/freq input/freq > output/bl-bl-fr-fr-4 &
-bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/st-st-st-st-4 &
+#bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/st-st-st-st-4 &
 #bin/usimm input/4channel.cfg input/fluid input/fluid input/swapt input/swapt input/comm2 input/comm2 input/ferret input/ferret > output/fl-fl-sw-sw-c2-c2-fe-fe-4 &
 #bin/usimm input/4channel.cfg input/fluid input/fluid input/swapt input/swapt input/comm2 input/comm2 input/ferret input/ferret input/black input/black input/freq input/freq input/comm1 input/comm1 input/stream input/stream > output/fl-fl-sw-sw-c2-c2-fe-fe-bl-bl-fr-fr-c1-c1-st-st-4 &
 
+
+
+
+############### OPEN PAGE ####################
+
+#bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/stream-open-0 &
+#bin/usimm input/4channel.cfg input/swapt input/swapt input/swapt input/swapt > output/swapt-open-0 &
+#bin/usimm input/4channel.cfg input/comm1 input/comm1 input/comm1 input/comm1 > output/comm1-open-0 &
+#bin/usimm input/4channel.cfg input/comm2 input/comm2 input/comm2 input/comm2 > output/comm2-open-0 &
+#bin/usimm input/4channel.cfg input/fluid input/fluid input/fluid input/fluid > output/fluid-open-0 &
+#bin/usimm input/4channel.cfg input/face input/face input/face input/face > output/face-open-0 &
+#bin/usimm input/4channel.cfg input/black input/black input/black input/black > output/black-open-0 &
+#bin/usimm input/4channel.cfg input/ferret input/ferret input/ferret input/ferret > output/ferret-open-0 &
+#bin/usimm input/4channel.cfg input/freq input/freq input/freq input/freq > output/freq-open-0 &
+#bin/usimm input/4channel.cfg input/MT0-canneal input/MT1-canneal input/MT2-canneal input/MT3-canneal > output/MTc-open-0 &
+
+
+################ CLOSED PAGE #####################
+
+#bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/stream-close-1 &
+#bin/usimm input/4channel.cfg input/swapt input/swapt input/swapt input/swapt > output/swapt-close-1 &
+#bin/usimm input/4channel.cfg input/comm1 input/comm1 input/comm1 input/comm1 > output/comm1-close-1 &
+#bin/usimm input/4channel.cfg input/comm2 input/comm2 input/comm2 input/comm2 > output/comm2-close-1 &
+#bin/usimm input/4channel.cfg input/fluid input/fluid input/fluid input/fluid > output/fluid-close-1 &
+#bin/usimm input/4channel.cfg input/face input/face input/face input/face > output/face-close-1 &
+#bin/usimm input/4channel.cfg input/black input/black input/black input/black > output/black-close-1 &
+#bin/usimm input/4channel.cfg input/ferret input/ferret input/ferret input/ferret > output/ferret-close-1 &
+#bin/usimm input/4channel.cfg input/freq input/freq input/freq input/freq > output/freq-close-1 &
+#bin/usimm input/4channel.cfg input/MT0-canneal input/MT1-canneal input/MT2-canneal input/MT3-canneal > output/MTc-close-1 &
+
+
+#The below set of commands is for running in closed-page with address mapping scheme = 1
+
+#bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/stream-close-0 &
+#bin/usimm input/4channel.cfg input/swapt input/swapt input/swapt input/swapt > output/swapt-close-0 &
+#bin/usimm input/4channel.cfg input/comm1 input/comm1 input/comm1 input/comm1 > output/comm1-close-0 &
+#bin/usimm input/4channel.cfg input/comm2 input/comm2 input/comm2 input/comm2 > output/comm2-close-0 &
+#bin/usimm input/4channel.cfg input/fluid input/fluid input/fluid input/fluid > output/fluid-close-0 &
+#bin/usimm input/4channel.cfg input/face input/face input/face input/face > output/face-close-0 &
+#bin/usimm input/4channel.cfg input/black input/black input/black input/black > output/black-close-0 &
+#bin/usimm input/4channel.cfg input/ferret input/ferret input/ferret input/ferret > output/ferret-close-0 &
+#bin/usimm input/4channel.cfg input/freq input/freq input/freq input/freq > output/freq-close-0 &
+#bin/usimm input/4channel.cfg input/MT0-canneal input/MT1-canneal input/MT2-canneal input/MT3-canneal > output/MTc-close-0 &
+
+
+################ ADAPTIVE PAGE ###################
+#bin/usimm input/4channel.cfg input/stream input/stream input/stream input/stream > output/stream-adapt-0 &
+#bin/usimm input/4channel.cfg input/swapt input/swapt input/swapt input/swapt > output/swapt-adapt-0 &
+#bin/usimm input/4channel.cfg input/comm1 input/comm1 input/comm1 input/comm1 > output/comm1-adapt-0 &
+#bin/usimm input/4channel.cfg input/comm2 input/comm2 input/comm2 input/comm2 > output/comm2-adapt-0 &
+#bin/usimm input/4channel.cfg input/fluid input/fluid input/fluid input/fluid > output/fluid-adapt-0 &
+#bin/usimm input/4channel.cfg input/face input/face input/face input/face > output/face-adapt-0 &
+#bin/usimm input/4channel.cfg input/black input/black input/black input/black > output/black-adapt-0 &
+#bin/usimm input/4channel.cfg input/ferret input/ferret input/ferret input/ferret > output/ferret-adapt-0 &
+#bin/usimm input/4channel.cfg input/freq input/freq input/freq input/freq > output/freq-adapt-0 &
+#bin/usimm input/4channel.cfg input/MT0-canneal input/MT1-canneal input/MT2-canneal input/MT3-canneal > output/MTc-adapt-0 &
+
+
+
+
+
+##################################################
